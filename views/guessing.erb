@@ -1,0 +1,88 @@
+<center>
+	<img src="http://www.heritageconservation.org/thumbnail/a/anime-if-you-stand-behind-they-give-them-protection-13.png
+">
+
+<!DOCTYPE HTML>
+	<h2>incorrect guesses left</h2> <%=counter%>
+	<h2 class="messages"><%=message%></h2>
+	<h2 class="messages2"><%=message2%></h2>
+<html>
+<head>
+
+	<style type="text/css">
+
+		body {
+
+			background-color: red;
+
+			transition: background-color 7s;
+
+		}
+
+	</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet","pink","tan","lightgreen","purple","black"];
+
+
+
+		var i = 1;
+
+
+
+		window.setInterval(function(){
+
+			document.body.style.backgroundColor = colors[i];
+
+			i++;
+
+			if (i === colors.length){
+
+				i=0;
+
+			}
+
+		}, 5000);
+
+	</script>
+</body>
+</html>
+
+	<body class="background"><h2 style= color:lightgreen><%=p2_name%> Start guessing the letters.</h2></body></center>
+<center><h3 style= color :lightgreen><%=blank%></h3></center>
+<br/><br/>
+<form method="post"	action="guess">
+<center>
+<input type="text" name="letter">
+<input type="submit" value="Enter Guess"/>
+<h2 style= color:lightgreen>Guesses-<%=array%> </h2>
+</center>
+</form>
+<%if counter == 9%>
+	<center>
+	<img src="http://pm1.narvii.com/5772/6e1abd204b21c83ff2e1ffc51da7a7d7eaca6e41_hq.jpg">
+<%elsif counter == 8%>
+	<center>
+	<img src="http://2.bp.blogspot.com/-grxyVlQ7B0E/Ui_j3aAy_xI/AAAAAAAAm_8/SHaL9Emu3Ys/s1600/4156340752_3788078336_b.jpg">
+<%elsif counter ==7%>
+ <center>
+ <img src="http://4.bp.blogspot.com/-5L9_o-xKe2M/UHq7R8ZniDI/AAAAAAAAAB0/4gWE8otpsTI/s1600/Gildarts-Quote-Fairy-Tail-dakaroth-31127905-1366-768.jpg">
+<%elsif counter ==6%>
+ <center>
+ <img src="http://stream1.gifsoup.com/view/821548/sasuke-fire-ball-jutsu-o.gif">
+<%elsif counter ==5%>
+ <center>	
+ <img src="http://pre12.deviantart.net/529d/th/pre/f/2011/046/c/9/natsu_after_eating_aetherion_by_akatsukifan505-d39lma6.jpg">
+<%elsif counter ==4%>
+ <center>
+ <img src="http://static.comicvine.com/uploads/original/6/63938/1216656-natsu2.jpg">
+<%elsif counter ==3%>
+  <img src="https://dailyanimeart.files.wordpress.com/2015/06/natsu-engulfs-fire.jpg?w=1200">
+<%elsif counter ==2%>
+ <img src="http://enpawa.weebly.com/uploads/2/2/0/4/22045354/772355263.jpg"> 
+<%elsif counter ==1%>
+ <img src="http://livedoor.4.blogimg.jp/anico_bin/imgs/c/b/cb8e7756.jpg">
+<%end%>
